@@ -1,0 +1,65 @@
+.map-page-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .zoo-map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .zoo-map {
+    width: 100%;
+    height: auto;
+  }
+  
+  .map-marker {
+    position: absolute;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    background-color: #ffdd57;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s;
+  }
+  
+  .map-marker:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    background-color: #ffcc00;
+  }
+  
+  .animal-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  .animal-popup img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

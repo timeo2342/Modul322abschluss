@@ -1,30 +1,27 @@
 import React from "react";
+import "./ContactPage.css";
 
-class ContactPage extends React.Component {
-  handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Vielen Dank für Ihre Nachricht! Wir melden uns bei Ihnen.");
-  };
-
-  render() {
-    return (
-      <div>
-        <h1>Kontakt</h1>
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label htmlFor="email">E-Mail:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label htmlFor="message">Nachricht:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <button type="submit">Senden</button>
-        </form>
+function ContactPage() {
+  return (
+    <div className="contact-page">
+      <h1>Kontakt</h1>
+      <div className="contact-card">
+        <h2>Zoo App Support</h2>
+        <p>
+          <strong>Adresse:</strong> Zürichbergstrasse 221, 8044 Zürich
+        </p>
+        <p>
+          <strong>Telefon:</strong> 044 254 25 00
+        </p>
+        <p>
+          <strong>E-Mail:</strong> zoo-app@gmail.com
+        </p>
+        <p>
+          <strong>Öffnungszeiten:</strong> Montag - Sonntag, 9:00 - 18:00 Uhr
+        </p>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default ContactPage;
